@@ -1,7 +1,26 @@
 aid: homeboodle
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/homeboodle.png
 name: Homeboodle
-description: Homeboodle is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Homeboodle was a San Francisco rental marketplace startup that rebranded as "Lovely" around 2012.
+  The product let renters search, apply for, and pay for apartments online, while giving landlords and
+  property managers tools to list units, screen applicants, and collect rent. Backed by 500 Startups
+  (now 500 Global) among other investors, Lovely (livelovely.com) was acquired by RentPath (the owner
+  of Apartment Guide and Rent.com) for roughly $13M in April 2014. The company is now defunct as an
+  independent product; livelovely.com issues a 301 redirect to apartmentguide.com and the former
+  developer/API surface (hub.livelovely.com) is offline. This record is retained for historical and
+  network-graph completeness rather than as an active API provider.
 url: https://raw.githubusercontent.com/api-evangelist/homeboodle/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +28,25 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-former-name: Homeboodle
+x-also-known-as: Lovely
+x-acquired-by: RentPath
+x-acquisition-year: '2014'
+x-founders:
+- Blake Pierson
+- Doug Wormhoudt
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Real Estate
+- Rentals
+- Marketplace
+- Property Management
+- PropTech
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +54,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/homeboodle-domain-security.yml
 - type: Website
   url: https://livelovely.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
